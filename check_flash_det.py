@@ -1,4 +1,4 @@
-# input argument: file path ex.:"x:\\MUR\\Stanoviste_TMP\\all\\21-01-21\\02hod\\cam1"
+# input argument: file path ex.:"x:\\all\\21-01-21\\02hod\\cam1"
 
 from colorthief import ColorThief
 from os import walk
