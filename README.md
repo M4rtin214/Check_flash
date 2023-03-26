@@ -11,3 +11,4 @@ check_flash.py - Script for check illuminated of photo
 conf.ini - configuration file
 
 check_flash_det.py - Script for setting values in the script configuration file "check_flash.py"
+- Using the helper script check_flash_det.py, find and set the limit for photo illumination in the configuration file conf.ini.
