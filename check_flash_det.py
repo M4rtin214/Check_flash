@@ -1,8 +1,8 @@
 # input argument: file path ex.:"x:\\all\\21-01-21\\02hod\\cam1"
 
-from colorthief import ColorThief
-from os import walk
 import sys
+from os import walk
+from colorthief import ColorThief
 
 
 #argument:
@@ -25,21 +25,16 @@ def files_of_folder(path):
 # returns a list with information about the dominant color in RGB(x,x,x)
 def dominant_color(img):
     color_thief = ColorThief(img)
-    # get the dominant color
-    dominant_color = color_thief.get_color(quality=1)
-    img_rgb_lst = dominant_color
+    img_rgb_lst = color_thief.get_color(quality=1) # get the dominant color
     return img_rgb_lst
 
 if __name__ == "__main__":
     files_lst = files_of_folder(file_path)
     print ("path: ", file_path)
-    #print ("files: ", files_lst)
     step = 0
-    flash = 0
 
     for img in files_lst:
-        step = step + 1
-
+        step += 1
         print ("step:", step)
         img = str(file_path + img)
         print (img)
